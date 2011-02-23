@@ -22,6 +22,9 @@
 	    	pusher_message = '<div class="pusher_message round">'+data.content+'</div>';
 	    	$('div.pusher_message.round').detach();
 	    	$('body').append(pusher_message);
+	    	$('div.pusher_message').live('click', function(){
+	    		$(this).detach();
+	    	});
 	    });
   	</script>
   </head>
